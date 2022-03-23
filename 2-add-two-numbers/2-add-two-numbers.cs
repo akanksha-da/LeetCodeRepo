@@ -12,12 +12,12 @@
 public class Solution {
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
         
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
+        ListNode dummy = new ListNode(0); // dummy node for storing the resulting sum node
+        ListNode current = dummy; // current node which will perform operations for dummy node
         
         int carry = 0;
         
-        while (l1 != null || l2 != null || carry == 1){
+        while (l1 != null || l2 != null || carry == 1){ // checking whether either of the linked lists are not null or if carry has a 1
             
             int sum = 0;
             
